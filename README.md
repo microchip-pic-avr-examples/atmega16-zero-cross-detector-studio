@@ -14,7 +14,7 @@ This is an example of how make a zero cross detector with a ATmega16 which is ba
 
 ## Software Used
 
-- [Atmel Studio 7.0 or later](https://www.microchip.com/mplab/avr-support/atmel-studio-7)
+- [Atmel Studio 7.0.2397 or later](https://www.microchip.com/mplab/avr-support/atmel-studio-7)
 - ATmega_DFP 1.4.351 or later
 
 ## Hardware Used
