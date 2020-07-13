@@ -4,18 +4,24 @@
 
 ![Circuit](images/circuit.png)
 
-This is an example of how make a zero cross detector with a ATmega16 which is based on the appnote [AN_2508](#Related-Documentation).
+One of the many issues with developing modern applications is to keep the spikes and EMI at a minimum, especially when switching AC mains in and out. Most of today’s new applications are controlled by one or moremicrocontrollers and this gives the possibility to prevent this noise in a simpleand cost efficient way.
+
+Noise produced during switching is dependent on the amplitude of the ACsinus at the actual switching point. To get this noise as low as possible the ideal switching would be when the amplitude is 0 volt. The amplitude is crossing 0 volt at the sinus “zero crossing”. Switching mains in and out at the zero crossing requires a way of detecting when the next crossing will be and launching a switching action at the crossing. This raises the need for a costefficient way to detect the zero crossing. This application note explains how to do that.
+
+Zero cross detection can also be used for other purposes, such as frequencycalculation and relative phase measuring.
+
+An example of how to make a zero cross detector with a ATmega16 is given here which is based on the appnote [AN_2508](#Related-Documentation).
 
 ## Related Documentation
 
 - [AN_2508 - Zero Cross Detector](https://www.microchip.com/wwwAppNotes/AppNotes.aspx?appnote=en591171)
 - [ATmega16 Product Page](https://www.microchip.com/wwwproducts/en/ATmega16)
-- [ATmega16 datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/doc2466.pdf)
 
 ## Software Used
 
 - [Atmel Studio 7.0.2397 or later](https://www.microchip.com/mplab/avr-support/atmel-studio-7)
 - ATmega_DFP 1.4.351 or later
+- AVR/GNU C Compiler 5.4.0 (buildt into studio)
 
 ## Hardware Used
 
@@ -31,11 +37,12 @@ This is an example of how make a zero cross detector with a ATmega16 which is ba
 
 ## Operation
 
-1. Open `AVR182zerocrossdetector.atsln` in Atmel Studio
-2. Connect the ATmega16 with your programmer of choice, we used a STK600.
-3. In your menu bar in Atmel Studio go to `Debug->Start Without Debugging` or press `CTRL + ALT + F5`
-4. Generate a sinus waveform with **max** `VCC+0.5V` on `PD2` with a frequency of for example 50 Hz.
-5. The logic analyser will then show a pulse train equivalent to that frequency on `PB0`
+1. Clone or download this repo.
+2. Open `AVR182zerocrossdetector.atsln` in Atmel Studio
+3. Connect the ATmega16 with your programmer of choice, we used a STK600.
+4. In your menu bar in Atmel Studio go to `Debug->Start Without Debugging` or press `CTRL + ALT + F5`
+5. Generate a sinus waveform with **max** `VCC+0.5V` on `PD2` with a frequency of for example 50 Hz.
+6. The logic analyser will then show a pulse train equivalent to that frequency on `PB0`
 
 ## Conclusion
 
