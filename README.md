@@ -21,7 +21,7 @@ An example of how to make a zero cross detector with a ATmega16 is given here wh
 
 - [Atmel Studio 7.0.2397 or later](https://www.microchip.com/mplab/avr-support/atmel-studio-7)
 - ATmega_DFP 1.4.351 or later
-- AVR/GNU C Compiler 5.4.0 (buildt into studio)
+- AVR/GNU C Compiler 5.4.0 (built into studio)
 
 ## Hardware Used
 
@@ -46,4 +46,4 @@ An example of how to make a zero cross detector with a ATmega16 is given here wh
 
 ## Conclusion
 
-We have shown how you can make a simple zero cross detector with a ATmega16. For more detailed workings about this example please refere to the appnote [AN_2508](#Related-Documentation)
+We have shown how you can make a simple zero cross detector with a ATmega16. For more detailed workings about this example please refere to the appnote [AN_2508](#Related-Documentation).
