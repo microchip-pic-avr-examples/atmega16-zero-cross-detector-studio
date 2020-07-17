@@ -12,9 +12,9 @@
     <OutputFileName>$(MSBuildProjectName)</OutputFileName>
     <OutputFileExtension>.elf</OutputFileExtension>
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
-    <AssemblyName>AVR182zerocrossdetector</AssemblyName>
-    <Name>AVR182zerocrossdetector</Name>
-    <RootNamespace>AVR182zerocrossdetector</RootNamespace>
+    <AssemblyName>atmega16-zero-cross-detector-studio</AssemblyName>
+    <Name>atmega16-zero-cross-detector-studio</Name>
+    <RootNamespace>atmega16-zero-cross-detector-studio</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
