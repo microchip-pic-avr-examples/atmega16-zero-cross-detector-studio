@@ -38,7 +38,7 @@ An example of how to make a zero cross detector with a ATmega16 is given here wh
 ## Operation
 
 1. Clone or download this repo.
-2. Open `AVR182zerocrossdetector.atsln` in Atmel Studio.
+2. Open `atmega16-zero-cross-detector-studio.atsln` in Atmel Studio.
 3. Connect the ATmega16 with your programmer of choice, we used a STK600.
 4. In your menu bar in Atmel Studio go to `Debug->Start Without Debugging` or press `CTRL + ALT + F5`.
 5. Generate a sinus waveform with **max** `VCC+0.5V` on `PD2` with a frequency of for example 50 Hz.
